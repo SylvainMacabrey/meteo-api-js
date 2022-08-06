@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="search">
+        <form id="form-city">
+            <input type="text" name="city" placeholder="Name of city" class="input-search" value="" />
+            <button class="btn" id="submit-btn" type="submit">Search</button>
+        </form>
+    </div>
+    <div id="panels"></div>
+    
+    <template id="meteo-panel">
+        <div class="panel" onmouseover="setForward(this)" onmouseout="setBackwards(this)">
+            <img src="" alt="" class="panel-icon" />
+            <div class="info">
+                <h4 class="panel-city"></h4>
+                <p class="panel-date"></p>
+                <p class="panel-condition"></p>
+                <p class="panel-temp-min"></p>
+                <p class="panel-temp-max"></p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
